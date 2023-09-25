@@ -1,0 +1,11 @@
+Start program
+    First name = John
+    Last Name = Doe
+    Street Address = 123 Main Street
+    City = Anytown
+    State = New York
+    Zip Code = 12345
+    Send to screen > first and last name together
+    Send to screen > Street Address
+    Send to Screen > City, State Zip Code
+End program

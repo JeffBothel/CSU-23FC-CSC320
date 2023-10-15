@@ -1,0 +1,20 @@
+Start program
+    Program loop that allows multiple calculations
+        Loop that gathers weekly grocery costs
+            Gather the cost of groceries from the user
+            Store the grocery in a float number value
+        End weekly grocery cost collection
+        Gather discount/coupon amount
+        If the coupon is greater than goceries or less than 0
+            Coupon amount = 10%
+        Else
+            Coupon amount = User input
+        Display the amount of the weekly groceries entered
+        Display the amount of the weekly groceries with coupon applied
+        Gather user input
+        If user input is blank
+            Break loop to end program
+        Else
+            Restart program loop
+    End program loop
+End program

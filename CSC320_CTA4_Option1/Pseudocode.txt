@@ -1,0 +1,47 @@
+Start program
+    New values array
+    New valueCount int
+    while loop to get userInput over and over
+        userInput of value or exit command
+        switch userInput
+            case "exit"
+                end program
+            case "end"
+                end program
+            case ""
+                calculate sum
+                calculate average
+                calculate min
+                calculate max
+                
+                display sum
+                display average
+                display min
+                display max
+                display interest
+
+                userInput gathered
+                switch userInput
+                    case "exit"
+                        end program
+                    case "end"
+                        end program
+                    default
+                        reset values
+                        reset valueCount
+                        reset user input
+                        continue loop
+            default
+                if next values entry < values array length
+                    convert userInput to float
+                    write userInput to values spot
+                    increase values count
+                if next values entry > values array length
+                    create tempValues array
+                    set tempValues = values
+                    reset values to new size
+                    write tempValues => values
+                    convert userInput to float
+                    write userInput to values spot
+                    increase values count
+    end loop to get userInput over and over

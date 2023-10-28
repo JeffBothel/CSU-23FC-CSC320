@@ -1,0 +1,79 @@
+Start main()
+    display "CSC320 Programming I - CAT 5 Programming Assignment"
+    define dayOfWeek array = {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}
+    define dayTemp array = 7 places
+    define userInput array
+    define console for gathering user input string
+    define tempsSum = 0
+
+    while(true) for continual user input
+        gather userInput
+        switch (userInput[0])
+            case "add"
+                switch (userInput[1])
+                    case "1"
+                    case "Monday"
+                        dayTemp[0] = userInput[2]
+                        continue
+                    case "2"
+                    case "Tuesday"
+                        dayTemp[1] = userInput[2]
+                        continue
+                    case "3"
+                    case "Wednesday"
+                        dayTemp[2] = userInput[2]
+                        continue
+                    case "4"
+                    case "Thursday"
+                        dayTemp[3] = userInput[2]
+                        continue
+                    case "5"
+                    case "Friday"
+                        dayTemp[4] = userInput[2]
+                        continue
+                    case "6"
+                    case "Saturday"
+                        dayTemp[5] = userInput[2]
+                        continue
+                    case "7"
+                    case "Sunday"
+                        dayTemp[6] = userInput[2]
+                        continue
+            case "display"
+                switch (userInput[1])
+                    case "1"
+                    case "Monday"
+                        display "Temprature for " + dayofWeek[0] + ": " + dayTemp[0]
+                        continue
+                    case "2"
+                    case "Tuesday"
+                        display "Temprature for " + dayofWeek[1] + ": " + dayTemp[1]
+                        continue
+                    case "3"
+                    case "Wednesday"
+                        display "Temprature for " + dayofWeek[2] + ": " + dayTemp[2]
+                        continue
+                    case "4"
+                    case "Thursday"
+                        display "Temprature for " + dayofWeek[3] + ": " + dayTemp[3]
+                        continue
+                    case "5"
+                    case "Friday"
+                        display "Temprature for " + dayofWeek[4] + ": " + dayTemp[4]
+                        continue
+                    case "6"
+                    case "Saturday"
+                        display "Temprature for " + dayofWeek[5] + ": " + dayTemp[5]
+                        continue
+                    case "7"
+                    case "Sunday"
+                        display "Temprature for " + dayofWeek[6] + ": " + dayTemp[6]
+                        continue
+                    case "week"
+                        i = 0
+                        while(i <= 6)
+                            display "Temprature for " + dayOfWeek[i] + ": " + dayTemp[i]
+                            tempsSum += dayTemp[i]
+                        display "Weekly average temprature: " + (tempsSum / 7)
+                        continue
+End main()

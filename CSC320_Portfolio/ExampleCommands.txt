@@ -1,0 +1,9 @@
+add car 2021 Chevy Malibu Green 12345678901234567 100
+add car 2023 Ford Focus Blue 12345678901234568 200
+add car 2020 Tesla Model0 Green 12345678901234569 1000
+add truck 2021 Ford F150 Black 12345678901234570 120
+update 1 whole 2022 Mini Cooper Black 12345678901234571 1234
+display 1
+remove 2
+display all
+yes

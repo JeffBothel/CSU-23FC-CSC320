@@ -80,6 +80,39 @@ public class AutoMgmt {
                 case "remove":
                     mainInventory.RemoveAuto(Integer.parseInt(userInputArr[1]));
                     continue;
+                case "update":
+                case "change":
+                    switch(userInputArr[2]) {
+                        case "whole":
+                            mainInventory.GetAuto(Integer.parseInt(userInputArr[1])).UpdateYear(Integer.parseInt(userInputArr[3]));
+                            mainInventory.GetAuto(Integer.parseInt(userInputArr[1])).UpdateMake(userInputArr[4]);
+                            mainInventory.GetAuto(Integer.parseInt(userInputArr[1])).UpdateModel(userInputArr[5]);
+                            mainInventory.GetAuto(Integer.parseInt(userInputArr[1])).UpdateColor(userInputArr[6]);
+                            mainInventory.GetAuto(Integer.parseInt(userInputArr[1])).UpdateVIN(userInputArr[7]);
+                            mainInventory.GetAuto(Integer.parseInt(userInputArr[1])).UpdateMileage(Float.parseFloat(userInputArr[8]));
+                            continue;
+                        case "year":
+                            mainInventory.GetAuto(Integer.parseInt(userInputArr[2])).UpdateYear(Integer.parseInt(userInputArr[3]));
+                            continue;
+                        case "make":
+                            mainInventory.GetAuto(Integer.parseInt(userInputArr[2])).UpdateMake(userInputArr[3]);
+                            continue;
+                        case "model":
+                            mainInventory.GetAuto(Integer.parseInt(userInputArr[2])).UpdateModel(userInputArr[3]);
+                            continue;
+                        case "color":
+                            mainInventory.GetAuto(Integer.parseInt(userInputArr[2])).UpdateColor(userInputArr[3]);
+                            continue;
+                        case "vin":
+                            mainInventory.GetAuto(Integer.parseInt(userInputArr[2])).UpdateVIN(userInputArr[3]);
+                            continue;
+                        case "mileage":
+                            mainInventory.GetAuto(Integer.parseInt(userInputArr[2])).UpdateMileage(Float.parseFloat(userInputArr[3]));
+                            continue;
+                        default:
+                            System.out.println("Invalid input. Please try again.");
+                            continue;
+                    }
                 case "done":
                 case "end":
                 case "exit":

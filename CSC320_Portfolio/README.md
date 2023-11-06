@@ -38,7 +38,7 @@ Given the above prompt provided, the following requirements need to make it into
 :white_check_mark: = Added\
 :heavy_exclamation_mark: = Problems
 
-* :white_check_mark: :white_square_button: Create a class for tracking vehicles in an dealership inventory
+* :white_check_mark: :white_check_mark: Create a class for tracking vehicles in an dealership inventory
     * :white_check_mark: :white_check_mark: Make of vehicle
     * :white_check_mark: :white_check_mark: Model of vehicle
     * :white_check_mark: :white_check_mark: Year of vehicle
@@ -50,14 +50,14 @@ Given the above prompt provided, the following requirements need to make it into
     * :white_check_mark: :white_check_mark: Include try and catch components to the class
     * :white_check_mark: :white_check_mark: Methods to update vehicle
     * :white_check_mark: :white_check_mark: Methods to display vehicle info
-* :white_check_mark: :white_square_button: Create a class that allows the management of the vehicle lists
-    * :white_check_mark: :white_square_button: Methods to add vehicles to the list
-    * :white_check_mark: :white_square_button: Methods to update a vehicle
-    * :white_check_mark: :white_square_button: Methods to remove a vehicle
-    * :white_check_mark: :white_square_button: Methods to list a vehicle
-    * :white_check_mark: :white_square_button: Include try and catch components to the class
-* :white_check_mark: :white_square_button: Create a user interface for the program
-    * :white_check_mark: :white_square_button: Create unit testing for the classes
+* :white_check_mark: :white_check_mark: Create a class that allows the management of the vehicle lists
+    * :white_check_mark: :white_check_mark: Methods to add vehicles to the list
+    * :white_check_mark: :white_check_mark: Methods to update a vehicle
+    * :white_check_mark: :white_check_mark: Methods to remove a vehicle
+    * :white_check_mark: :white_check_mark: Methods to list a vehicle
+    * :white_check_mark: :white_check_mark: Include try and catch components to the class
+* :white_check_mark: :white_check_mark: Create a user interface for the program
+    * :white_check_mark: :white_check_mark: Create unit testing for the classes
 
 ## Pseudocode for the various components
 The following are the various pseudocode components for the program

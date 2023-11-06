@@ -38,26 +38,26 @@ Given the above prompt provided, the following requirements need to make it into
 :white_check_mark: = Added\
 :heavy_exclamation_mark: = Problems
 
-* :white_square_button: :white_square_button: Create a class for tracking vehicles in an dealership inventory
-    * :white_check_mark: :white_square_button: Make of vehicle
-    * :white_check_mark: :white_square_button: Model of vehicle
-    * :white_check_mark: :white_square_button: Year of vehicle
-    * :white_check_mark: :white_square_button: Color of vehicle
-    * :white_check_mark: :white_square_button: Mileage of vehicle
-    * :white_check_mark: :white_square_button: VIN for the vehicle
-    * :white_check_mark: :white_square_button: Default constructor for the class
-    * :white_check_mark: :white_square_button: Parameterized constructors for the vehicle class
+* :white_check_mark: :white_square_button: Create a class for tracking vehicles in an dealership inventory
+    * :white_check_mark: :white_check_mark: Make of vehicle
+    * :white_check_mark: :white_check_mark: Model of vehicle
+    * :white_check_mark: :white_check_mark: Year of vehicle
+    * :white_check_mark: :white_check_mark: Color of vehicle
+    * :white_check_mark: :white_check_mark: Mileage of vehicle
+    * :white_check_mark: :white_check_mark: VIN for the vehicle
+    * :white_check_mark: :white_check_mark: Default constructor for the class
+    * :white_check_mark: :white_check_mark: Parameterized constructors for the vehicle class
+    * :white_check_mark: :white_check_mark: Include try and catch components to the class
+    * :white_check_mark: :white_check_mark: Methods to update vehicle
+    * :white_check_mark: :white_check_mark: Methods to display vehicle info
+* :white_check_mark: :white_square_button: Create a class that allows the management of the vehicle lists
+    * :white_check_mark: :white_square_button: Methods to add vehicles to the list
+    * :white_check_mark: :white_square_button: Methods to update a vehicle
+    * :white_check_mark: :white_square_button: Methods to remove a vehicle
+    * :white_check_mark: :white_square_button: Methods to list a vehicle
     * :white_check_mark: :white_square_button: Include try and catch components to the class
-    * :white_check_mark: :white_square_button: Methods to update vehicle
-    * :white_check_mark: :white_square_button: Methods to display vehicle info
-* :white_square_button: :white_square_button: Create a class that allows the management of the vehicle lists
-    * :white_square_button: :white_square_button: Methods to add vehicles to the list
-    * :white_square_button: :white_square_button: Methods to update a vehicle
-    * :white_square_button: :white_square_button: Methods to remove a vehicle
-    * :white_square_button: :white_square_button: Methods to list a vehicle
-    * :white_square_button: :white_square_button: Include try and catch components to the class
-* :white_square_button: :white_square_button: Create a user interface for the program
-    * :white_square_button: :white_square_button: Create unit testing for the classes
+* :white_check_mark: :white_square_button: Create a user interface for the program
+    * :white_check_mark: :white_square_button: Create unit testing for the classes
 
 ## Pseudocode for the various components
 The following are the various pseudocode components for the program
@@ -168,6 +168,12 @@ class AutoInventory
 
     public Automobile GetAuto(int index)
         return this.inventoryQueue[index]
+
+    public String toString()
+        String outString = ""
+        for(auto in inventoryQueue)
+            outString += (auto + \n\n)
+        return outString
 ```
 * Chose to use the Queue type of listing management to  track the vehicles in the FIFO method for sales
 
@@ -175,6 +181,69 @@ class AutoInventory
 ```
 class AutoMgmt
     method main
+        String userInput = ""
+        Scanner userScanner = Scanner(userInput)
+        Srtring[] userInputArr = userInput.split(" ")
+        AutoInventory mainInventory
+        while(true)
+            output "AutoMgmt: "
+            userScanner
+            switch(userInputArr[0])
+                case "add"
+                    switch(userInputArr[1])
+                        case "car"
+                        case "truck"
+                        case "van"
+                        case "suv"
+                            mainInventory.add(Automobile(userInputArr[2], userInputArr[3], userInputArr[4], userInputArr[5], userInputArr[6], userInputArr[7]))
+                            continue
+                case "display"
+                    switch(userInputArr[1])
+                        case "all"
+                            mainInventory.toString()
+                            output "do you want to export?"
+                            userScanner
+                            switch(userInputArr[0])
+                                case "no"
+                                case "n"
+                                    continue
+                                case "yes"
+                                case "y"
+                                default
+                                    export to file
+                                    continue
+                case "update"
+                    switch(userInputArr[2])
+                        case "year"
+                            this.mainInventory.GetAuto(userInputArr[1]).UpdateYear(userInputArr[2])
+                            continue
+                        case "make"
+                            this.mainInventory.GetAuto(userInputArr[1]).UpdateYear(userInputArr[2])
+                            continue
+                        case "model"
+                            this.mainInventory.GetAuto(userInputArr[1]).UpdateYear(userInputArr[2])
+                            continue
+                        case "color"
+                            this.mainInventory.GetAuto(userInputArr[1]).UpdateYear(userInputArr[2])
+                            continue
+                        case "vin"
+                            this.mainInventory.GetAuto(userInputArr[1]).UpdateYear(userInputArr[2])
+                            continue
+                        case "mileage"
+                            this.mainInventory.GetAuto(userInputArr[1]).UpdateYear(userInputArr[2])
+                            continue
+                case "remove"
+                    this.mainInventory.RemoveAuto(userInputArr[1])
+                    continue
+                case "end"
+                case "exit"
+                case "done"
+                case ""
+                    return
+                default
+                    output "Invalid command."
+                    continue
+
     method TestAutomobile
         Automobile goodAutoDef0 = correct auto defintion
         Automobile goodAutoDef1 = correct auto defintion
@@ -187,6 +256,7 @@ class AutoMgmt
     
     method TestAutoInventory
         AutoInventory testAutoInventory
+        TestAutomobile
         testAutoInventory.AddAuto(goodAutoDef0)
         testAutoInventory.AddAuto(goodAutoDef1)
         testAutoInventory.AddAuto(goodAutoDef2)

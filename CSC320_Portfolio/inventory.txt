@@ -1,0 +1,4 @@
+2023 Ford Mustang Red null 0.0
+2023 Ford Mustang Red 11111111111111111 1000.0
+
+Total vehicles: 2
